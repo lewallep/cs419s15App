@@ -64,6 +64,9 @@
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="pages\page1\page1.css" />
+    <Content Include="pages\page1\page1.html" />
+    <Content Include="pages\page1\page1.js" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.Phone.WinJS.2.1, Version=1.0" />
