@@ -24,20 +24,21 @@
   <Applications>
     <Application Id="App" StartPage="default.html">
       <m3:VisualElements DisplayName="CS419Reuse" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="CS419Reuse" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png" />
+        <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="images\SplashScreen.png" />
       </m3:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <Dependencies>
     <PackageDependency Name="Microsoft.Phone.WinJS.2.1" MinVersion="1.0.9651.0" />
   </Dependencies>
   <build:Metadata>
     <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
     <build:Item Name="ProjectGUID" Value="930f9db5-31f7-485b-b6ba-ae183ab8ed86" />
