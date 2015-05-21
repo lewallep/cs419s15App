@@ -1,76 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>PCL_WORKSTATION</Machine>
-    <WindowsUser>Philip</WindowsUser>
+    <Machine>PHILIPLEWALDD02</Machine>
+    <WindowsUser>philip</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>2964a124-258f-45ce-9fee-19edab369c68</PackageIdentityName>
-    <IntermediateOutputPath>E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\default.css">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.css">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.css">
       <PackagePath>css\ui-themed.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-dark.css">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-dark.css">
       <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-light.css">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-light.css">
       <PackagePath>css\ui-themed.theme-light.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.css">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square150x150Logo.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square150x150Logo.scale-240.png">
       <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square44x44Logo.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square44x44Logo.scale-240.png">
       <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Wide310x150Logo.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Wide310x150Logo.scale-240.png">
       <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square71x71Logo.scale-240.png">
       <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\SplashScreen.scale-240.png">
       <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\StoreLogo.scale-240.png">
       <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\default.js">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\navigator.js">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.js">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.html">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\default.html">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="Y:\Documents\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
