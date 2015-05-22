@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>page5</title>
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <link href="page5.css" rel="stylesheet" />
+    <script src="page5.js"></script>
+</head>
+<body>
+    <div class="page5 fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to page5</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <p>Content goes here.</p>
+            <div id="locationSection" aria-label="Location section">
+                <h2 class="group-title" role="heading">Location</h2>
+                <iframe id="map" src="ms-appx-web:///html/map.html" aria-label="Map"></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

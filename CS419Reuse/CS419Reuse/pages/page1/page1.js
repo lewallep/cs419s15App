@@ -8,14 +8,15 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-            WinJS.Utilities.query("a").listen("click", this.linkHandler, false);
+
+            var pageOneNavButton = document.getElementById("goPage2");
+            pageOneNavButton.addEventListener("click", this.navButton, false);
             
         },
 
-        linkHandler: function (eventInfo) {
+        navButton: function (eventInfo) {
             eventInfo.preventDefault();
-            var link = eventInfo.target;
-            WinJS.Navigation.navigate(link.href);
+            WinJS.Navigation.navigate("/pages/page2/page2.html");
         }
     });
 })();

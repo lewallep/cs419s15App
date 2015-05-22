@@ -7,13 +7,13 @@
         ready: function (element, options) {
             // TODO: Initialize the page here.
 
-            WinJS.Utilities.query("a").listen("click", this.linkHandler, false);
+            var pageHomeNavButton = document.getElementById("goPage1");
+            pageHomeNavButton.addEventListener("click", this.navButton, false);
         },
 
-        linkHandler: function (eventInfo) {
+        navButton: function (eventInfo) {
             eventInfo.preventDefault();
-            var link = eventInfo.target;
-            WinJS.Navigation.navigate(link.href);
+            WinJS.Navigation.navigate("/pages/page1/page1.html");
         }
     });
 })();

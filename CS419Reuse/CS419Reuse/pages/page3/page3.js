@@ -7,17 +7,14 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            // TODO: Initialize the page here.
+            var pageThreeNavButton = document.getElementById("goPage4");
+            pageThreeNavButton.addEventListener("click", this.navButton, false);
+
         },
 
-        unload: function () {
-            // TODO: Respond to navigations away from this page.
-        },
-
-        updateLayout: function (element) {
-            /// <param name="element" domElement="true" />
-
-            // TODO: Respond to changes in layout.
+        navButton: function (eventInfo) {
+            eventInfo.preventDefault();
+            WinJS.Navigation.navigate("/pages/page4/page4.html");
         }
     });
 })();

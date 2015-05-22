@@ -3,6 +3,7 @@ css\ui-themed.css
 css\ui-themed.theme-dark.css
 css\ui-themed.theme-light.css
 default.html
+html\map.html
 images\SplashScreen.scale-240.png
 images\Square150x150Logo.scale-240.png
 images\Square44x44Logo.scale-240.png
@@ -23,3 +24,9 @@ pages\page2\page2.js
 pages\page3\page3.css
 pages\page3\page3.html
 pages\page3\page3.js
+pages\page4\page4.css
+pages\page4\page4.html
+pages\page4\page4.js
+pages\page5\page5.css
+pages\page5\page5.html
+pages\page5\page5.js

@@ -12,3 +12,8 @@
     margin-top: 37px;
     margin-left: -96px;
 }
+
+iframe {
+    height: 500px;
+    width: 90%;
+}

@@ -8,23 +8,15 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-            WinJS.Utilities.query("a").listen("click", this.linkHandler, false);
+
+            var pageTwoNavButton = document.getElementById("goPage3");
+            pageTwoNavButton.addEventListener("click", this.navButton, false);
+
         },
 
-        unload: function () {
-            // TODO: Respond to navigations away from this page.
-        },
-
-        updateLayout: function (element) {
-            /// <param name="element" domElement="true" />
-
-            // TODO: Respond to changes in layout.
-        },
-
-        linkHandler: function (eventInfo) {
+        navButton: function (eventInfo) {
             eventInfo.preventDefault();
-            var link = eventInfo.target;
-            WinJS.Navigation.navigate(link.href);
+            WinJS.Navigation.navigate("/pages/page3/page3.html");
         }
     });
 })();
