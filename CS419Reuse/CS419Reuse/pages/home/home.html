@@ -2,34 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>homePage</title>
+    <title>CRRD: Home</title>
 
     <!-- WinJS references -->
     <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
     <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
 
+    <link href="/css/default.css" rel="stylesheet" />
     <link href="/pages/home/home.css" rel="stylesheet" />
     <script src="/pages/home/home.js"></script>
 </head>
 <body>
-    <!-- The content that will be loaded and displayed. -->
-    <div class="fragment homepage">
+    <div class="wrapper homepage">
+        <nav aria-label="Top navigation" class="topnav">
+            <div class="left-nav">About</div>
+            <div class="pagetitle">Home</div>
+            <div class="right-nav"></div>
+        </nav>
         <header aria-label="Header content" role="banner">
-            <h1 class="titlearea win-type-ellipsis">
+            <div class="logo">
+                <img src="../../images/crrd_logo.jpg" />
+            </div>
+            <h1 class="titlearea">
                 <span class="pagetitle">Corvallis Reuse and Repair Directory</span>
             </h1>
         </header>
         <section aria-label="Main content" role="main">
-            <div>
-                <p>This is where all of the good stuff goes.</p>
-                <a href="http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycledepot.pdf">
-                    Republic Services recycling Depot</a>
-                <br />
-                <br />
-                <br />
-                <a href="http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf">
-                    Republic Services List of what they accept in curbside recycling containers</a>
-                <button id="goPage1">Nav Button to Categories</button>
+            <div class="category-select">
+                <div class="main-category-select">
+                    <label for="categories">Select a Category</label>
+                    <select id="categories">
+                        <option>Select...</option>
+                        <option value="Household">Household</option>
+                        <option value="Repair Items">Repair Items</option>
+                        <option value="Appliances - Small">Appliances - Small</option>
+                        <option value="Appliances - Large">Appliances - Large</option>
+                    </select>
+                </div>
+                <div class="sub-category-select">
+                    <label for="subcategories">Select a Subcategory</label>
+                    <select id="subcategories">
+                        <option value="All">All Subcategories</option>
+                    </select>
+                </div>
+                <button class="category-select-submit">Find Businesses</button>
+            </div>
+            <div class="republic-links">
+                <h4>Republic Services Links</h4>
+                <p>
+                    <a href="http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycledepot.pdf" class="pdf-link">Recycle Depot - Accepted Materials</a>
+                </p>
+                <p>
+                    <a href="http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf" class="pdf-link">Curbside Recycling - Accepted Materials</a>
+                </p>
+            </div>
+            <div class="csc-logo">
+                <p>
+                    <em>Proudly managed by the</em><br />
+                    <a href="http://sustainablecorvallis.org/"><img src="/images/csc_logo.png" width="150" /></a>
+                </p>
             </div>
         </section>
     </div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿#contenthost {
     height: 100%;
     width: 100%;
@@ -40,3 +41,108 @@
         -ms-grid-row: 2;
         height: 100%;
     }
+=======
+﻿#contenthost {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: -ms-grid;
+    -ms-grid-rows: 60px 1fr;
+    -ms-grid-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+    .topnav {
+	    position: absolute;
+        width: 100%;
+        height: 60px;
+	    display: -ms-grid;
+	    -ms-grid-rows: 1fr;
+	    -ms-grid-columns: 1fr 200px 1fr;
+        background: #56a846;
+        color: #fff;
+        font-size: 12pt;
+    }
+
+        .topnav .left-nav {
+            -ms-grid-column: 1;
+            -ms-grid-column-align: center;
+            -ms-grid-row-align: center;
+        }
+
+        .topnav .pagetitle {
+            -ms-grid-column: 2;
+            -ms-grid-column-align: center;
+            -ms-grid-row-align: center;
+            color: #444;
+            font-size: 15pt;
+        }
+
+        .topnav .right-nav {
+            -ms-grid-column: 3;
+            -ms-grid-column-align: center;
+            -ms-grid-row-align: center;
+        }
+
+.pdf-link {
+    display: block;
+    padding-left: 40px;
+    background: url('/images/pdf_icon.png') no-repeat top left;
+    height: 32px;
+    line-height: 32px;
+}
+
+select,
+select:active,
+select:focus {
+    border-color: #444;
+    color: #444;
+    border-radius: 10px;
+    background: #fff;
+}
+    option:checked,
+    select:focus::-ms-value {
+        color: #444;
+    }
+
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .fragment header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 37px 83px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-navigation-backbutton {
+            -ms-grid-column: 2;
+            margin-top: 57px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 3;
+            margin-top: 37px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+            }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+    }
+>>>>>>> 8708da17343c2c2c56a24783e490a7de6a449e52
