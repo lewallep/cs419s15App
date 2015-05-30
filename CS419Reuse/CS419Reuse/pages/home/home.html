@@ -9,14 +9,13 @@
     <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
     <script src="/js/jquery-2.1.4.min.js"></script>
 
-    <link href="/css/default.css" rel="stylesheet" />
-    <link href="/pages/home/home.css" rel="stylesheet" />
-    <script src="/pages/home/home.js"></script>
+    <link href="home.css" rel="stylesheet" />
+    <script src="home.js"></script>
 </head>
 <body>
     <div class="wrapper homepage">
         <nav aria-label="Top navigation" class="topnav">
-            <div class="left-nav">About</div>
+            <div class="left-nav"></div>
             <div class="pagetitle">Home</div>
             <div class="right-nav"></div>
         </nav>
@@ -42,8 +41,8 @@
                 </div>
                 <div class="sub-category-select">
                     <label for="subcategories">Select a Subcategory</label>
-                    <select id="subcategories">
-                        <option value="All">All Subcategories</option>
+                    <select id="subcategories" disabled>
+                        <option value="All">Select main category first</option>
                     </select>
                 </div>
                 <button class="category-select-submit">Find Businesses</button>
