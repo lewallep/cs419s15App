@@ -1,4 +1,4 @@
-﻿.business-row {
+﻿#business-rows > div {
     border-bottom: 1px #444 solid;
     padding: 10px 0;
     display: -ms-grid;

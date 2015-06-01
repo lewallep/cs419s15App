@@ -15,20 +15,17 @@
     <div class="wrapper">
         <nav aria-label="Top navigation" class="topnav">
             <div class="left-nav">&lt; Home</div>
-            <div class="pagetitle">[Category Name]</div>
+            <div class="pagetitle"></div>
             <div class="right-nav">Map View</div>
         </nav>
         <section aria-label="Main content" role="main">
-            <div class="business-row">
-                <div class="business-name">Sample Business</div>
-                <div class="business-city">Corvallis</div>
+            <div id="business-row-template" data-win-control="WinJS.Binding.Template">
+                <div class="business-name"><span data-win-bind="textContent: name"></span></div>
+                <div class="business-city"><span data-win-bind="textContent: city"></span></div>
                 <div class="business-distance">2.3mi</div>
+                <input type="hidden" class="business-id" data-win-bind="value: id" />
             </div>
-            <div class="business-row">
-                <div class="business-name">Sample Business 2</div>
-                <div class="business-city">Philomath</div>
-                <div class="business-distance">7.8mi</div>
-            </div>
+            <div id="business-rows"></div>
         </section>
     </div>
 </body>

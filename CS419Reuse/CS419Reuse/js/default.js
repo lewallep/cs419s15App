@@ -9,6 +9,18 @@
     var sched = WinJS.Utilities.Scheduler;
     var ui = WinJS.UI;
 
+    if (app.sessionState.userLat === undefined || app.sessionState.userLong === undefined) {
+        var loc = new Windows.Devices.Geolocation.Geolocator();
+        if (loc != null) {
+            loc.getGeopositionAsync().then(getPositionHandler);
+        }
+    }
+
+    function getPositionHandler(pos) {
+        app.sessionState.userLat = pos.coordinate.point.position.latitude;
+        app.sessionState.userLong = pos.coordinate.point.position.longitude;
+    }
+
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
