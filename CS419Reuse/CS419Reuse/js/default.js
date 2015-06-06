@@ -19,6 +19,9 @@
     function getPositionHandler(pos) {
         app.sessionState.userLat = pos.coordinate.point.position.latitude;
         app.sessionState.userLong = pos.coordinate.point.position.longitude;
+        // NOTE: hardcoded just for testing!
+        app.sessionState.userLat = 44.586351736;
+        app.sessionState.userLong = -123.256210015;
     }
 
     app.addEventListener("activated", function (args) {
@@ -50,11 +53,25 @@
 
     app.oncheckpoint = function (args) {
         // TODO: This application is about to be suspended. Save any state
-        // that needs to persist across suspensions here. If you need to 
-        // complete an asynchronous operation before your application is 
+        // that needs to persist across suspensions here. If you need to
+        // complete an asynchronous operation before your application is
         // suspended, call args.setPromise().
         app.sessionState.history = nav.history;
     };
 
     app.start();
 })();
+
+function calc_distance(lat1, lon1, lat2, lon2) {
+    var radlat1 = Math.PI * lat1/180
+    var radlat2 = Math.PI * lat2/180
+    var radlon1 = Math.PI * lon1/180
+    var radlon2 = Math.PI * lon2/180
+    var theta = lon1-lon2
+    var radtheta = Math.PI * theta/180
+    var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+    dist = Math.acos(dist)
+    dist = dist * 180/Math.PI
+    dist = dist * 60 * 1.1515
+    return dist;
+}

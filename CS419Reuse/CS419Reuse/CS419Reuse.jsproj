@@ -53,10 +53,9 @@
     <Content Include="css\ui-themed.theme-dark.css" />
     <Content Include="css\ui-themed.theme-light.css" />
     <Content Include="html\map.html" />
-    <Content Include="images\crrd_logo.jpg" />
+    <Content Include="images\crrd_logo.png" />
     <Content Include="images\csc_logo.png" />
     <Content Include="images\pdf_icon.png" />
-    <Content Include="images\crrd_logo.jpg" />
     <Content Include="images\csc_logo.png" />
     <Content Include="images\pdf_icon.png" />
     <Content Include="images\Square150x150Logo.scale-240.png" />

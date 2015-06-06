@@ -1,6 +1,8 @@
 ﻿(function () {
     "use strict";
 
+    var app = WinJS.Application;
+
     WinJS.UI.Pages.define("/pages/home/home.html", {
         
         ready: function (element, options) {
@@ -44,19 +46,17 @@
                 }
             });
 
-
-
             $('.category-select-submit').on('click', function (e) {
                 e.preventDefault();
                 var $categories = $('#categories');
                 var $subcategories = $('#subcategories');
                 if ($subcategories.val() == 'All') {
-                    WinJS.Application.sessionState.catID = $categories.val();
-                    WinJS.Application.sessionState.catName = $('#categories option:selected').data('name');
+                    app.sessionState.catID = $categories.val();
+                    app.sessionState.catName = $('#categories option:selected').data('name');
                 }
                 else {
-                    WinJS.Application.sessionState.catID = $subcategories.val();
-                    WinJS.Application.sessionState.catName = $('#subcategories option:selected').data('name');
+                    app.sessionState.catID = $subcategories.val();
+                    app.sessionState.catName = $('#subcategories option:selected').data('name');
                 }
                 WinJS.Navigation.navigate('/pages/business-list/business-list.html');
             });
