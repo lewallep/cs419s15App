@@ -7,6 +7,7 @@
     <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
     <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
     <script src="/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
 
     <link href="business-map.css" rel="stylesheet" />
     <script src="business-map.js"></script>
@@ -18,7 +19,7 @@
             <div class="pagetitle">[Category Name]</div>
             <div class="right-nav">List View</div>
         </nav>
-        <section aria-label="Main content" role="main">
+        <section class="mapSection" aria-label=" Main content" role="main">
             <div id="locationSection" class="subsection" aria-label="Location section">
                 <!-- <h2 class="group-title" role="heading">Location</h2> -->
                 <iframe id="map" src="ms-appx-web:///html/map.html" aria-label="Map"></iframe>
