@@ -70,6 +70,7 @@
     <Content Include="js\jquery-2.1.4.min.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
     <Content Include="js\navigator.js" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
