@@ -1,4 +1,4 @@
-﻿.wrapper section[role="main"] {
+﻿.page-business-detail section[role="main"] {
     display: -ms-grid;
     -ms-grid-columns: 1fr;
     -ms-grid-rows: auto auto auto auto auto;

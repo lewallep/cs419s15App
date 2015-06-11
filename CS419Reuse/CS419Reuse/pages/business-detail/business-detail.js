@@ -46,9 +46,18 @@
                     }
                 });
 
-            $('.left-nav').on('click', function () {
-                WinJS.Navigation.navigate('/pages/business-list/business-list.html');
-            });
+            var view = app.sessionState.pastView;
+            if (view == 'map') {
+                $('.left-nav').text("< Map");
+                $('.left-nav').on('click', function () {
+                    WinJS.Navigation.navigate('/pages/business-map/business-map.html');
+                });
+            }
+            else {
+                $('.left-nav').on('click', function () {
+                    WinJS.Navigation.navigate('/pages/business-list/business-list.html');
+                });
+            }
 
         },
 

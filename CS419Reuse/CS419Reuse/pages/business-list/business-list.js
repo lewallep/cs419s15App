@@ -47,6 +47,7 @@
                         });
 
                         $('#business-rows .win-template').on('click', function () {
+                            app.sessionState.pastView = 'list';
                             app.sessionState.businessID = $(this).children('.business-id').val();
                             WinJS.Navigation.navigate('/pages/business-detail/business-detail.html');
                         });

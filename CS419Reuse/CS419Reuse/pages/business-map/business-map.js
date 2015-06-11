@@ -1,20 +1,29 @@
 ﻿(function () {
     "use strict";
 
+    var app = WinJS.Application;
+
     WinJS.UI.Pages.define("/pages/business-map/business-map.html", {
         
         ready: function (element, options) {
 
-            var cat_name = WinJS.Application.sessionState.catName;
-            var cat_id = WinJS.Application.sessionState.catID;
+            var cat_name = app.sessionState.catName;
+            var cat_id = app.sessionState.catID;
 
             var c = new Windows.Web.Http.HttpClient();
             c.getStringAsync(new Windows.Foundation.Uri("http://web.engr.oregonstate.edu/~adamjosh/419/api.php?type=business&catid=" + cat_id))
-                .done(function (result) {
-                    var jsonResult = JSON.parse(result);
-                    if (jsonResult.length > 0) {
-                        // do stuff with data
+                .done(function (businesses) {
+                    document.frames['map'].postMessage(businesses, "ms-appx-web://" + document.location.host);
+
+                    window.addEventListener("message", receiveMessage, false);
+                    function receiveMessage(event) {
+                        if (event.origin === "ms-appx-web://" + document.location.host) {
+                            app.sessionState.pastView = 'map';
+                            app.sessionState.businessID = event.data;
+                            WinJS.Navigation.navigate('/pages/business-detail/business-detail.html');
+                        }
                     }
+
                 });
 
             $('.pagetitle').text(cat_name);
