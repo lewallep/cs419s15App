@@ -184,15 +184,13 @@
     <Language Code="vi-vn" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>25038GroupPJPApps.CorvallisReuseAndReapirDirectory</MainPackageIdentityName>
+    <MainPackageIdentityName>25038GroupPJPApps.CorvallisReuseAndRepairDirectory</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>CorvallisReuseAndReapirDirectory</ReservedName>
+      <ReservedName>CorvallisReuseAndRepairDirectory</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
-    <MainPackageIdentityName>25038GroupPJPApps.CRRDOSU15</MainPackageIdentityName>
-    <MainPackageIdentityName>25038GroupPJPApps.lewallep001</MainPackageIdentityName>
-    <MainPackageIdentityName>25038GroupPJPApps.pleasereservethisforme</MainPackageIdentityName>
+    <MainPackageIdentityName>25038GroupPJPApps.CorvallisReuseAndRepairDirectory</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windowsphone.com/AppSubmission/AssociationLanding?windowsProductId=5432e6be-e94d-4002-ae97-cbf4f69ba7f7" />
+  <PackageInfoList LandingUrl="https://dev.windowsphone.com/AppSubmission/AssociationLanding?windowsProductId=16de9353-2aa1-4f18-8686-9dd1751584bc" />
 </StoreAssociation>
