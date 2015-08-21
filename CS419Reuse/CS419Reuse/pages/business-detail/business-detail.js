@@ -42,7 +42,7 @@
                         else {
                             $('.business-notes').remove();
                         }
-                        
+
                     }
                 });
 
@@ -58,8 +58,6 @@
                     WinJS.Navigation.navigate('/pages/business-list/business-list.html');
                 });
             }
-
         },
-
     });
 })();
